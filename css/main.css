@@ -1,0 +1,14 @@
+h1 {
+	font-family: "Raleway";
+	font-weight: 800;
+	text-shadow: 1px 1px #87B986;
+}
+
+#board {
+	outline: black solid thick;
+	background-color: #EDEDED;
+}
+
+#options {
+	margin-top: 20px;
+}
