@@ -7,8 +7,29 @@ h1 {
 #board {
 	outline: black solid thick;
 	background-color: #EDEDED;
+	cursor: crosshair;
 }
 
 #options {
 	margin-top: 20px;
+}
+
+button {
+	font-family: "Raleway";
+	font-weight: 600;
+	width: 100px;
+	height: 30px;
+	background-color: #EDEDED;
+	border: none;
+	outline: black solid thin;
+}
+
+button:active {
+	font-family: "Raleway";
+	color: #87B986;
+	font-weight: 600;
+	width: 100px;
+	height: 30px;
+	background-color: #EDEDED;
+	outline: red solid thin;
 }

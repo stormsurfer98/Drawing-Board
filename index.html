@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-	<html onkeydown="clearBoard()">
+	<html onkeydown="checkKeyPressed(event)" onkeyup="if(event.keyCode == 17 || event.keyCode == 91 || event.keyCode == 224) controlHeld = false">
 		<head>
 			<title>Drawing Board</title>
 			<link href='https://fonts.googleapis.com/css?family=Raleway:400,600,800' rel='stylesheet' type='text/css'>
 			<link rel="stylesheet" type="text/css" href="css/main.css"/>
+			<script src="js/jquery-2.1.4.min.js"></script>
 		</head>
 
 		<body bgcolor="#D3D3D3">
@@ -12,9 +13,15 @@
 					<br>
 					<h1 id="start">Drawing Board</h1>
 				</span>
-				
-				<canvas width="1000" height="600" id="board">
+
+				<canvas width="1000" height="550" id="board">
 				</canvas>
+				
+				<br><br>
+				<button id="clear" style="margin-right: 40px" onclick="clearBoard()">Clear</button>
+				<button id="fetch" style="margin-right: 40px" onclick="fetchStore()">Fetch</button>
+				<button id="save" onclick="uploadStore()">Save</button>
+
 			</center>
 
 			<script src="js/main.js"></script>
